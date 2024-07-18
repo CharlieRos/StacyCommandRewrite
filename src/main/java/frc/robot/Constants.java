@@ -8,7 +8,7 @@ public class Constants {
         public static final int kRightMotorID = -1;
         public static final int kLeftBeamID = -1;
         public static final int kRightBeamID = -1;
-        
+
         public static final Rotation2d kTopPosition = Rotation2d.fromRotations(10.0);
         public static final Rotation2d kBottomPosition = Rotation2d.fromRotations(0.0);
         public static final Rotation2d kTolerance = Rotation2d.fromRotations(1.0);
@@ -18,5 +18,13 @@ public class Constants {
         public static final double kD = 0;
         public static final double kFF = 0;
 
+    }
+
+    public static final class IntakeConstants {
+        public static final int kTopMotorID = -1;
+        public static final int kBottomMotorID = -1;
+        public static final int kIntakeBeamID = -1;
+        
+        
     }
 }
