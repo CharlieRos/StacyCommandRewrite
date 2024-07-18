@@ -29,6 +29,10 @@ public class RobotContainer {
     opController.povDown().onTrue(climber.lowerClimbers());
     opController.povLeft().onTrue(climber.zeroClimbers());
     opController.povRight().onTrue(climber.stopClimbers());
+
+    //intake
+    opController.rightTrigger().whileTrue(intake.startIntake()).onFalse(intake.stopIntake());
+    opController.leftTrigger().whileTrue(intake.startOuttake()).onFalse(intake.stopIntake());
   }
 
   public Command getAutonomousCommand() {
